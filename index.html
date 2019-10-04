@@ -44,13 +44,13 @@
         var jsImg_3 = new Array("images/work/work205_0.jpg","images/work/work205_1.png");
         var jsImg_3_len = jsImg_3.length;  // 圖檔數量
         // 要用另一個變數存，是不想在 function 中每次都要算陣列的大小
-        var j=2;                       //起始照片  2 為images/work/work204.jpg
+        var k=2;                       //起始照片  2 為images/work/work204.jpg
         //設定每兩秒執行一次sequentialImg() ，此行要在 function 之外
         setInterval("sequentialImg_3()",3500);
         function sequentialImg_3(){  //循序播放
-            document.getElementById("my_div_3").innerHTML  = "<img src='"+jsImg_3[j]+"' width=fix height=fix>";        
-                j++;
-                if(j>=jsImg_3_len)  j=0;
+            document.getElementById("my_div_3").innerHTML  = "<img src='"+jsImg_3[k]+"' width=fix height=fix>";        
+                k++;
+                if(j>=jsImg_3_len)  k=0;
         }
 -->
 </script>
@@ -615,7 +615,7 @@
 												<div class="video col">
 													<div class="image fit">
 														<div id="my_div_3" ><img src="images/work/work205.jpg" alt="雞祥如意" /></div>
-                                                        <p class="caption"  style="color:#ffffff">雞祥如意</p>
+                                                        <p class="caption"  style="color:#ffffff">歷年新年賀圖</p>
                                                         <p class="caption2"><font color="#ffffff">類型：</font>繪圖作品</br>
                                                            <font color="#ffffff">簡介：</font></br>每年都會透過製作新年賀卡，來檢視自己一年下來Photoshop鼠繪技巧又提升了多少。</br>
 														<div class="arrow">
