@@ -6,7 +6,23 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
-    
+	
+<script type="text/javascript">
+<!--  //循序播放陣列中指定的圖檔
+        var jsImg_3 = new Array("images/work/work205_0.jpg","images/work/work205_1.png","images/work/work205.jpg");
+        var jsImg_3_len = jsImg_3.length;  // 圖檔數量
+        // 要用另一個變數存，是不想在 function 中每次都要算陣列的大小
+        var k=2;                       //起始照片  2 為images/work/work204.jpg
+        //設定每兩秒執行一次sequentialImg() ，此行要在 function 之外
+        setInterval("sequentialImg_3()",3500);
+        function sequentialImg_3(){  //循序播放
+            document.getElementById("my_div_3").innerHTML  = "<img src='"+jsImg_3[k]+"' width=fix height=fix>";        
+                k++;
+                if(j>=jsImg_3_len)  k=0;
+        }
+-->
+</script>  
+	
 <script type="text/javascript">
 <!--  //循序播放陣列中指定的圖檔
         var jsImg = new Array("images/work/work204_5.jpg","images/work/work204_6.jpg","images/work/work204.jpg","images/work/work204_7.jpg","images/work/work204_8.jpg");
@@ -39,21 +55,6 @@
 -->
 </script>
 
-<script type="text/javascript">
-<!--  //循序播放陣列中指定的圖檔
-        var jsImg_3 = new Array("images/work/work205_0.jpg","images/work/work205_1.png","images/work/work205.jpg");
-        var jsImg_3_len = jsImg_3.length;  // 圖檔數量
-        // 要用另一個變數存，是不想在 function 中每次都要算陣列的大小
-        var k=2;                       //起始照片  2 為images/work/work204.jpg
-        //設定每兩秒執行一次sequentialImg() ，此行要在 function 之外
-        setInterval("sequentialImg_3()",3500);
-        function sequentialImg_3(){  //循序播放
-            document.getElementById("my_div_3").innerHTML  = "<img src='"+jsImg_3[k]+"' width=fix height=fix>";        
-                k++;
-                if(j>=jsImg_3_len)  k=0;
-        }
--->
-</script>
     
 	<body>
     		<!-- Header -->
