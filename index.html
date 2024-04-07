@@ -1,10 +1,10 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>「Andy」的數位履歷</title>
+		<title>「Andy老師」的數位履歷</title>
 		<link id="linkshow" rel="icon" type="image/png" sizes="8x8" href="images/resume.png">
 		<meta charset="utf-8" />
-		<meta name="keywords" content="「Andy老師」的數位履歷, Andy老師的數位履歷, Andy, Andy Chang, Andy Chang老師, Andy文騫, Andy文騫老師, Andy老師, 數位履歷, 文騫老師, 張文騫, 張文騫老師">
+		<meta name="keywords" content="「Andy老師」的數位履歷, Andy老師的數位履歷, Andy, Andy Chang, Andy Chang老師, Andy文騫, Andy文騫老師, Andy老師, 數位履歷, 文騫老師, 張文騫, 張文騫老師, 安迪, 安迪老師, 張安迪老師">
 		<meta name="author" content="Andy Chang">
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />		
@@ -40,7 +40,7 @@
 				j++;
 				if(j>=jsImg_2_len)  j=0;
 		}
-		var jsImg_3 = new Array("images/work/work205.jpg","images/work/work205_0.jpg","images/work/work205_1.jpg","images/work/work205_2.jpg","images/work/work205_3.jpg","images/work/work205_4.jpg");
+		var jsImg_3 = new Array("images/work/work205.jpg","images/work/work205_0.jpg","images/work/work205_1.jpg","images/work/work205_2.jpg","images/work/work205_3.jpg","images/work/work205_4.jpg","images/work/work205_5.jpg","images/work/work205_6.jpg");
 		var jsImg_3_len = jsImg_3.length;
 		var k=2;
 		setInterval("sequentialImg_3()",3500);
@@ -49,6 +49,16 @@
 			document.getElementById("my_div_3").innerHTML  = "<img src='"+jsImg_3[k]+"' width=fix height=fix>";        
 				k++;
 				if(k>=jsImg_3_len)  k=0;
+		}
+		var jsImg_4 = new Array("images/work/work206.jpg","images/work/work206_1.jpg");
+		var jsImg_4_len = jsImg_4.length;
+		var l=2;
+		setInterval("sequentialImg_4()",3500);
+		function sequentialImg_4()
+		{
+			document.getElementById("my_div_4").innerHTML  = "<img src='"+jsImg_4[l]+"' width=fix height=fix>";        
+				l++;
+				if(l>=jsImg_4_len)  l=0;
 		}
 	</script>  
 
@@ -71,7 +81,7 @@
 		<section id="banner" style = "background-image:url('images/banner.gif')">
 			<div class="inner">
 				<header>
-					<h1>Hi!<br>我是Andy</h1>
+					<h1>Hi!<br>我是Andy老師</h1>
 					<p>以下是我的數位履歷</p>
 				</header>
 				<a href="#main" class="button big alt scrolly">開始探索</a>
@@ -111,15 +121,54 @@
 						<!-- Tabbed Video Section -->
 						<div class="flex flex-tabs">
 							<ul class="tab-list">
-								<li><a href="#" data-tab="tab-1" class="active">文書處理類</a></li>
+								<li><a href="#" data-tab="tab-0" class="active">程式語言類</a></li>
+								<li><a href="#" data-tab="tab-1">文書處理類</a></li>
 								<li><a href="#" data-tab="tab-2">影像設計類</a></li>
 								<li><a href="#" data-tab="tab-3">行銷管理類</a></li>
 								<li><a href="#" data-tab="tab-4">戶外休閒類</a></li>
-                                <li><a href="#" data-tab="tab-5">準備考取類</a></li>
 							</ul>
 							<div class="tabs">
+								<!-- Tab 0 -->
+								<div class="tab tab-0 flex flex-2 active">
+									<!-- Video Thumbnail -->
+									<div class="video col">
+										<div class="image fit">
+											<img src="images/license/license001.png" alt="CSFC Python 程式語言檢定 初級"/>
+											<p class="caption" style="color:#ffffff">CSFC Python 程式語言檢定 初級</p>
+											<div class="arrow">
+											</div>
+										</div>
+									</div>
+									<!-- Video Thumbnail -->
+									<div class="video col">
+										<div class="image fit">
+											<img src="images/license/license002.png" alt="CSFC Python 程式語言檢定 進階級"/>
+											<p class="caption" style="color:#ffffff">CSFC Python 程式語言檢定 進階級</p>
+											<div class="arrow">
+											</div>
+										</div>
+									</div>
+									<!-- Video Thumbnail -->
+									<div class="video col">
+										<div class="image fit">
+											<img src="images/license/license003.PNG" alt="CSFC C++ 程式語言檢定 初級"/>
+											<p class="caption" style="color:#ffffff">CSFC C++ 程式語言檢定 初級</p>
+											<div class="arrow">
+											</div>
+										</div>
+									</div>
+									<!-- Video Thumbnail -->
+									<div class="video col">
+										<div class="image fit">
+											<img src="images/license/license004.png" alt="CSFC C++ 程式語言檢定 進階級"/>
+											<p class="caption" style="color:#ffffff">CSFC C++ 程式語言檢定 進階級</p>
+											<div class="arrow">
+											</div>
+										</div>
+									</div>
+								</div>
 								<!-- Tab 1 -->
-								<div class="tab tab-1 flex flex-2 active">
+								<div class="tab tab-1 flex flex-2">
 									<!-- Video Thumbnail -->
 									<div class="video col">
 										<div class="image fit">
@@ -247,15 +296,6 @@
 										</div>
 									</div>
 								</div>
-								<!-- Tab 5 -->
-								<div class="tab tab-5 flex flex-2">
-									<!-- Video Thumbnail -->
-									<div class="video col">
-										<div class="image fit">
-											<p class="caption">APCS大學程式設計先修檢測</p>
-										</div>
-									</div>
-								</div>
 							</div>
 						</div>
 					</div>
@@ -304,9 +344,10 @@
 									</div>
 									<p class="caption">
 									<font color="#ffffff">-----工作歷程-----</font><br/>
+									<font color="#ffffff">2023/04~</font> <br/>CodingBar程式學院<br/>顧問講師<br/>
 									<font color="#ffffff">2019/09~</font> <br/>沙箱科技學院<br/>課程主任暨資深講師<br/>
 									<font color="#ffffff">-----實習歷程-----</font><br/> 
-									<font color="#ffffff">2017/09~2019/06</font> <br/>政治大學<br/>多項計畫助理、檔案管理專員<br/> 
+									<font color="#ffffff">2017/09~2019/06</font> <br/>政治大學<br/>計畫助理、檔管專員<br/> 
 									<font color="#ffffff">2017/06~2017/10</font> <br/>台灣微軟公司<br/>雲端服務部門實習生<br/> 					
 									<font color="#ffffff">2016/11~2017/03</font> <br/>酷好股份有限公司<br/>軟體測試實習生<br/> 
 									<font color="#ffffff">2016/07~2016/08</font> <br/>中華數位設計創作協會<br/>實習生<br/> 
@@ -458,6 +499,17 @@
 										</div>
 										<a href="https://piteacher.github.io/S2_Flappy_Butterfly/" title="點擊瀏覽網站" class="link" target="_blank" ></a>
 									</div>
+									<!-- Video Thumbnail -->
+									<div class="video col">
+										<div class="image fit">
+											<img src="images/work/work113.jpg" alt="星遊探險隊遊戲" />
+											<p class="caption" style="color:#ffffff">[遊戲]星遊探險隊</p>
+											<p class="caption">HTML+JavaScript獨創方法製作之經典太空船射擊遊戲，設計亮點為擁有不同攻擊模式的敵人與武器系統。</p>
+											<div class="arrow">
+											</div>
+										</div>
+										<a href="https://piteacher.github.io/V2_Interstellar_Adventure/" title="點擊瀏覽網站" class="link" target="_blank" ></a>
+									</div>
 								</div>
 								<!-- Tab 2 -->
 								<div class="tab tab-2 flex flex-2">
@@ -486,6 +538,28 @@
 									<!-- Video Thumbnail -->
 									<div class="video col">
 										<div class="image fit">
+											<img src="images/work/work210.jpg" alt="我是自信兔!" />
+											<p class="caption"  style="color:#ffffff">[靜態貼圖]我是自信兔!</p>
+											<p class="caption">透過AI繪圖結合Canva應用，在短短一天內完成製作並上架的貼圖系列。</p>
+											<div class="arrow">
+											</div>
+										</div>
+										<a href="https://store.line.me/stickershop/product/24710002/zh-Hant" title="點擊連結至Line Store" class="link" target="_blank" ></a>
+									</div>
+									<!-- Video Thumbnail -->
+									<div class="video col">
+										<div class="image fit">
+											<img src="images/work/work207.jpg" alt="機器人課程DM與課程開發示意圖" />
+											<p class="caption"  style="color:#ffffff">[數位設計]機器人課程DM與課程開發示意圖</p>
+											<p class="caption">於沙箱科技學院任職時，所設計之機器人課程DM與課程開發示意圖。此外同時也為機器人、程式設計課程開發多項長短期教案，並為公司建立起完整培訓與管理系統。</p>
+											<div class="arrow">
+											</div>
+										</div>
+										<a href="https://imgur.com/zdf2sfS" title="點擊連結至imgur觀看大圖" class="link" target="_blank" ></a>
+									</div>
+									<!-- Video Thumbnail -->
+									<div class="video col">
+										<div class="image fit">
 											<img src="images/work/work208.jpg" alt="資訊教育課程DM與獎章" />
 											<p class="caption"  style="color:#ffffff">[數位設計]資訊教育課程DM與獎章</p>
 											<p class="caption">為𝝿發王潛能開發學院，所設計之資訊教育課程DM與獎章。此外還協助開發多項資訊教育課程程式、教案與簡報。</p>
@@ -493,17 +567,6 @@
 											</div>
 										</div>
 										<a href="https://linevoom.line.me/user/_ddS6o1AhWCkzgBIjJD31XUGXk1aQAF7y_ylh2sw?utm_medium=windows&utm_source=desktop&utm_campaign=OA_Profile" title="點擊連結至𝝿發王潛能開發學院Line官方網站" class="link" target="_blank" ></a>
-									</div>
-									<!-- Video Thumbnail -->
-									<div class="video col">
-										<div class="image fit">
-											<img src="images/work/work207.png" alt="機器人課程DM與設備擺設示意圖" />
-											<p class="caption"  style="color:#ffffff">[數位設計]機器人課程DM與設備擺設示意圖</p>
-											<p class="caption">於沙箱科技學院任職時，所設計之機器人課程DM與設備擺設示意圖。此外同時也為機器人、程式設計課程開發多項長短期教案，並為公司建立起完整培訓與管理系統。</p>
-											<div class="arrow">
-											</div>
-										</div>
-										<a href="https://imgur.com/zdf2sfS" title="點擊連結至imgur觀看大圖" class="link" target="_blank" ></a>
 									</div>
 									<!-- Video Thumbnail -->
 									<div class="video col">
@@ -519,8 +582,8 @@
 									<!-- Video Thumbnail -->
 									<div class="video col">
 										<div class="image fit">
-											<img src="images/work/work206.jpg" alt="兔寶剪髮設計" />
-											<p class="caption"  style="color:#ffffff">[數位設計]兔寶剪髮Logo+文字</p>
+											<div id="my_div_4" ><img src="images/work/work206.jpg" alt="兔寶剪髮設計" /></div>
+											<p class="caption"  style="color:#ffffff">[數位設計]兔寶剪髮</p>
 											<p class="caption">接案設計其中一家公司的成果作品，透過兔子的特質加上暖色調，呈現出溫馨且專業的兒童剪髮形象。</p>
 											<div class="arrow">
 											</div>
@@ -608,6 +671,19 @@
 									<!-- Video Thumbnail -->
 									<div class="video col">
 										<div class="image fit">
+											<img src="images/work/work404.png" alt="玩程式越野動力車成果" />
+											<div class="arrow"> 
+												<div class="icon fa-play">
+												</div>      
+											</div>
+										</div>                                           
+										<p class="caption"  style="color:#ffffff">[課程成果影片]玩程式越野動力車成果影片</p>
+										<p class="caption">透過素材剪輯，來展示學生在越野動力車課程中的學習成果。</p>
+										<a href="https://youtu.be/m0s96ITOZbw" title="點擊觀看影片" class="link" target="_blank" ></a>
+									</div>	
+									<!-- Video Thumbnail -->
+									<div class="video col">
+										<div class="image fit">
 											<img src="images/work/work403.JPG" alt="𝝿發王資訊課程介紹影片" />
 											<div class="arrow"> 
 												<div class="icon fa-play">
@@ -659,7 +735,7 @@
 					<!-- <ul class="icons">
 						<li><a href="https://www.facebook.com/profile.php?id=100006624396431" class="icon fa-facebook" target="_blank" ><span class="label">Facebook</span></a></li>
 					</ul> -->
-					<a>© Andy Chang 張文騫 2022</a>
+					<a>© Andy Chang 張安迪 2024</a>
 				</div>
 			</div>
 		</footer>
